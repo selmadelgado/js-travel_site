@@ -1,9 +1,9 @@
 .btn {
   background-color: $mainBlue;
   color: #fff;
-  text-decoration: none;
-  padding: 1.2rem;
   display: inline-block;
+  padding: 1.2rem;
+  text-decoration: none;
 
   
   &--orange {
