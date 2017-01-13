@@ -48,6 +48,7 @@
 
 	var Person = __webpack_require__(2);
 
+	alert("ABC 321");
 
 	var aries = new Person("Aries Peterson", "white");
 	aries.greet();
@@ -59,7 +60,7 @@
 	jane.greet();
 
 
-	$("h1").remove();
+	/* $("h1").remove();*/
 
 /***/ },
 /* 1 */

@@ -2,6 +2,7 @@ var $ = require('jquery');
 
 var Person = require('./modules/Person');
 
+alert("ABC 321");
 
 var aries = new Person("Aries Peterson", "white");
 aries.greet();
@@ -13,4 +14,4 @@ var jane = new Person("Jane Smith", "green");
 jane.greet();
 
 
-$("h1").remove();
+/* $("h1").remove();*/
