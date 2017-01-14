@@ -994,6 +994,10 @@ a {
   }
 }
 
+.site-header__menu-content--is-visible {
+  display: block;
+}
+
 .site-header__menu-icon {
   background-color: #fff;
   position: absolute;
