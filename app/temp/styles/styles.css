@@ -738,8 +738,23 @@ a {
   }
 }
 
-.primary-nav--pull-right {
-  float: right;
+.primary-nav {
+  
+  padding-top: 10px;
+}
+
+@media(min-width: 800px) {
+
+  .primary-nav {
+    padding-top: 0;
+  }
+}
+
+@media(min-width: 800px) {
+
+  .primary-nav--pull-right {
+    float: right;
+  }
 }
 
 .primary-nav ul {
@@ -754,17 +769,48 @@ a {
 }
 
 .primary-nav li {
-  float: left;
+  display: inline-block;
   list-style: none;
-  padding-right: 20px;
+  padding-right: 7px;
+}
+
+@media(min-width: 800px) {
+
+  .primary-nav li {
+    float: left;
+    display: block;
+    padding-right: 20px;
+  }
+}
+
+.primary-nav li li:last-child {
+  padding-right: 0;
+}
+
+@media(min-width: 800px) {
+
+  .primary-nav li li:last-child {
+    padding-right: 20px;
+  }
 }
 
 .primary-nav a {
   color: #fff;
+  background-color: rgba(47,85,114, .5);
   display: block;
   font-weight: 300;
   text-decoration: none;
-  padding: 18px 0;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+@media(min-width: 800px) {
+
+  .primary-nav a {
+    background-color: transparent;
+    font-size: 1rem;
+    padding: 18px 0;
+  }
 }
 
 .row::after {
@@ -942,9 +988,15 @@ a {
   position: absolute; 
   width: 100%;
   z-index: 2;
+  -webkit-transition: background-color .300s ease-out;
+  transition: background-color .300s ease-out;
   
   
   
+}
+
+.site-header--is-expanded {
+  background-color: rgba(47,85,114, .55);
 }
 
 @media(min-width: 800px) {
@@ -954,8 +1006,11 @@ a {
   }
 }
 
-.site-header__btn-container {
-  float: right;
+@media(min-width: 800px) {
+
+  .site-header__btn-container {
+    float: right;
+  }
 }
 
 .site-header__logo {
@@ -984,18 +1039,33 @@ a {
 }
 
 .site-header__menu-content {
-  display: none;
+  opacity: 0;
+  padding-top: 90px;
+  position: relative;
+  text-align: center;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  z-index: -10;
 }
 
 @media(min-width: 800px) {
 
   .site-header__menu-content {
-    display: block;
+    opacity: 1;
+    padding-top: 0;
+    z-index: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 .site-header__menu-content--is-visible {
-  display: block;
+  opacity: 1;
+  z-index: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .site-header__menu-icon {
