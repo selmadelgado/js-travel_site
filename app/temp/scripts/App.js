@@ -57,7 +57,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
-	var revealOnScroll = new _RevealOnScroll2.default();
+	new _RevealOnScroll2.default();
+	new _RevealOnScroll2.default();
 
 /***/ },
 /* 1 */
@@ -10362,7 +10363,7 @@
 	  function RevealOnScroll() {
 	    _classCallCheck(this, RevealOnScroll);
 
-	    this.itemsToReveal = (0, _jquery2.default)(".feature-item");
+	    this.itemsToReveal = (0, _jquery2.default)(".feature-item, .testimonial");
 	    this.hideInitially();
 	    this.createWaypoints();
 	  }
