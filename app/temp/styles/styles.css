@@ -688,6 +688,64 @@ a {
   }
 }
 
+.modal {
+  background-color: rgba(255, 255, 255, .94);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  visibility: hidden;
+  z-index: 5;
+  
+  
+  
+}
+
+.modal--is-visible {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.modal__close {
+  color: #2f5572;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  -webkit-transform: scaleX(1.25);
+          transform: scaleX(1.25);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+.modal__close:hover{
+  color: #d59541;
+}
+
+.modal__description {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.modal__inner {
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
 .page-section {
   padding: 1.2rem 0;
 }
@@ -982,6 +1040,11 @@ a {
   color: #2f5572;
 }
 
+.section-title--less-margin {
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+}
+
 .section-title__icon {
   display: block;
   margin-left: auto;
@@ -1195,6 +1258,36 @@ a {
   }
 }
 
+.social-icons {
+  text-align: center;
+}
+
+.social-icons__icon {
+  background-color: #d59541;
+  display: inline-block;
+  margin: 0 5px 5px 5px;
+  width: 33%;
+  height: 75px;
+  position: relative;
+}
+
+@media(min-width: 530px) {
+
+  .social-icons__icon {
+    width: 72px;
+    margin: 0 5px;
+  }
+}
+
+.social-icons__icon .icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.  Instead edit gulp/templates/sprite */
 
 .icon {
@@ -1331,6 +1424,10 @@ a {
 
 .wrapper--medium {
   max-width: 976px;
+}
+
+.wrapper--narrow {
+  max-width: 450px;
 }
 
 .wrapper--no-padding-until-medium {
