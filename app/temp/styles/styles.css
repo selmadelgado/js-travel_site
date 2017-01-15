@@ -811,6 +811,10 @@ a {
     font-size: 1rem;
     padding: 18px 0;
   }
+
+  .primary-nav a.is-current-link {
+    color: #fabb69;
+  }
 }
 
 .reveal-item {
