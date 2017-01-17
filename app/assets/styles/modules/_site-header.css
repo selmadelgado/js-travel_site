@@ -129,7 +129,7 @@
     
     .site-header__menu-icon__middle {
       opacity: 0;
-      transform: scaleX(0);
+      width: 0;
     }
     
     &::after {
