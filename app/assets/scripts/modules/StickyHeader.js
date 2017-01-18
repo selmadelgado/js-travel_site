@@ -12,35 +12,35 @@ class StickyHeader {
     this.headerLinks = $(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
-    this.refreshWaypoints(); 
+    this.refreshWaypoints();
   }
-  
+
 refreshWaypoints(){
-  this.lazyImages.load(function(){
+  this.lazyImages.on('load', function(){
     Waypoint.refreshAll();
   });
 }
-  
+
 addSmoothScrolling(){
     this.headerLinks.smoothScroll();
    }
-  
+
   createHeaderWaypoint(){
     var that = this;
     new Waypoint({
       element: this.headerTriggerElement[0],
       handler: function(direction){
-        
+
         if(direction=="down"){
           that.siteHeader.addClass("site-header--dark");
         } else {
           that.siteHeader.removeClass("site-header--dark");
         }
-        
+
       }
     });
   }
-  
+
   createPageSectionWaypoints(){
     var that = this;
     this.pageSections.each(function(){
@@ -56,7 +56,7 @@ addSmoothScrolling(){
         },
         offset: "20%"
       });
-      
+
       new Waypoint({
         element: currentPageSection,
         handler: function(direction){
@@ -70,8 +70,8 @@ addSmoothScrolling(){
       });
     });
   }
-  
-  
+
+
 }
 
 export default StickyHeader;
