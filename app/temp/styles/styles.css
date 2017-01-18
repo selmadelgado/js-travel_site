@@ -999,6 +999,7 @@ a {
 }
 
 .row--equal-height-at-medium > div {
+  float: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1123,8 +1124,8 @@ a {
   }
 
   .site-header--dark .site-header__logo {
-    -webkit-transform: scale(.69);
-            transform: scale(.69);
+    -webkit-transform: scale(.68);
+            transform: scale(.68);
   }
 }
 

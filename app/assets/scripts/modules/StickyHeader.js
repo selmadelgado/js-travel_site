@@ -12,7 +12,7 @@ class StickyHeader {
     this.headerLinks = $(".primary-nav a");
     this.createPageSectionWaypoints();
     this.addSmoothScrolling();
-    this.refreshWaypoints();
+    this.refreshWaypoints(); 
   }
   
 refreshWaypoints(){
@@ -22,7 +22,7 @@ refreshWaypoints(){
 }
   
 addSmoothScrolling(){
-    this.headerLinks.smooothScroll();
+    this.headerLinks.smoothScroll();
    }
   
   createHeaderWaypoint(){

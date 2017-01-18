@@ -11226,7 +11226,7 @@
 	  }, {
 	    key: 'addSmoothScrolling',
 	    value: function addSmoothScrolling() {
-	      this.headerLinks.smooothScroll();
+	      this.headerLinks.smoothScroll();
 	    }
 	  }, {
 	    key: 'createHeaderWaypoint',
