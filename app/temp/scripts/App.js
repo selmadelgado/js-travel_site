@@ -11287,7 +11287,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-	 * jQuery Smooth Scroll - v2.1.1 - 2017-01-01
+	 * jQuery Smooth Scroll - v2.1.2 - 2017-01-19
 	 * https://github.com/kswedberg/jquery-smooth-scroll
 	 * Copyright (c) 2017 Karl Swedberg
 	 * Licensed MIT
@@ -11306,7 +11306,7 @@
 	  }
 	}(function($) {
 
-	  var version = '2.1.1';
+	  var version = '2.1.2';
 	  var optionOverrides = {};
 	  var defaults = {
 	    exclude: [],
@@ -11537,8 +11537,6 @@
 	    var scrollDir = 'scrollTop';
 	    var aniProps = {};
 	    var aniOpts = {};
-
-	    console.log(explicitOffset);
 
 	    if (explicitOffset.px) {
 	      opts = $.extend({link: null}, $.fn.smoothScroll.defaults, optionOverrides);
